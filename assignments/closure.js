@@ -4,7 +4,7 @@ const sentence = () => {
   let text = 'Hello ';
   return (word)=>  { 
     text = text + word + ' ';
-    console.log(text); 
+    return text; 
   }
 }
 const addWord = sentence();
@@ -52,8 +52,8 @@ const counterFactory = () => {
 const fluxCounter= counterFactory();
 
 fluxCounter.decrement();
-console.log(fluxCounter.value());
+// console.log(fluxCounter.value());
 fluxCounter.decrement();
-console.log(fluxCounter.value());
+// console.log(fluxCounter.value());
 fluxCounter.increment();
-console.log(fluxCounter.value());
+// console.log(fluxCounter.value());
