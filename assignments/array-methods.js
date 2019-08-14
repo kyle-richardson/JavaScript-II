@@ -65,7 +65,7 @@ console.log(fullName);
 // The event director needs to have all the runner's first names converted to uppercase because the director BECAME DRUNK WITH POWER. Convert each first name into all caps and log the result
 
 let allCaps = runners.map(element => element.first_name.toUpperCase());
-console.log(JSON.stringify(allCaps)); 
+console.log(allCaps); 
 
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue.  Get a list of runners with large sized shirts so they can choose a different size. Return an array named largeShirts that contains information about the runners that have a shirt size of L and log the result
@@ -103,9 +103,6 @@ let filter2XL = runners.filter(el => {
 
 console.log(filter2XL);
 
-
-// Problem 3 (return emails from above)
-
 let emailsXL = [];
 
 filter2XL.forEach(e => {
@@ -113,3 +110,12 @@ filter2XL.forEach(e => {
 })
 
 console.log(emailsXL);
+
+
+// Problem 3  realize emails need to be reformatted with .au for australia
+
+let auEmails = runners.map(ele => ele.email = `${ele.email}.au`);
+
+console.log(auEmails);
+
+
