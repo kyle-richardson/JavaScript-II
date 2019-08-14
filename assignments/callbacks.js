@@ -63,8 +63,7 @@ function contains(item, list, cb) {
   }
   return cb(bo);
 }
-// bool = contains('Pencil', items, (one, li) => console.log(one));
-// bool = contains('pop', items,(one, li) => console.log(one));
+
 let bool = (equalQ) => console.log(equalQ);
 contains('Pencil', items, bool);
 contains('pop',items,bool);
